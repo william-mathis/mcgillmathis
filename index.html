@@ -24,18 +24,28 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="mycontainer">
       <!-- start bootstrap container -->
       <h1 class="banner title">William Mathis - Journalist</h1>
       <table class="banner">
         <tr class="row">
-          <td>Text</td>
-          <td>Video</td>
-          <td>Code</td>
-          <td class="end-cell">About + contact</td>
+          <td class="tab" id="textTab">Text</td>
+          <td class="tab" id="videoTab">Video</td>
+          <td class="tab" id="codeTab">Code</td>
+          <td class="end-cell tab" id="aboutTab">About + contact</td>
         </tr>
-
       </table>
+      <div class="popUp" id="textPop">
+        <div class="popUpContainer">
+          <h1>Text</h1>
+          <div class="equis">
+            X</div>
+          <div class="popText">A selection of my written work:</div>
+          <iframe src="http://archive.sltrib.com/article.php?id=5448764&itype=CMSID" class="textFrame"></iframe>
+        </div>
+      </div>
+
+
       <img src="images/me.jpg" class="image" />
       <h1 class="headlineText">Website coming soon...</h1>
       <div class="row">
@@ -46,6 +56,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="main.js "></script>
 
     <!-- Your javascript should be called here -->
   </body>
