@@ -67,7 +67,7 @@ table {
 .image {
   opacity: .75;
   position: relative;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0;
 }
 
@@ -112,7 +112,7 @@ table.banner {
 .popUp {
   visibility: hidden;
   margin: 0 auto;
-  max-width: 100%;
+  width: 90%;
   font-family: sans-serif;
   position: absolute;
   background-color: #F0F1F4;
@@ -120,6 +120,17 @@ table.banner {
   border-width: 3px;
   border-color: #F0F1F4;
   z-index: 100;
+  left: 5%;
+}
+
+.popText {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mediaImage {
+  width: 100%;
 }
 
 .visible {
@@ -148,7 +159,8 @@ table.banner {
 }
 
 .textFrame {
-  height: 85vh;
+  height: 50vh;
+  width: 100%;
 }
 
 
