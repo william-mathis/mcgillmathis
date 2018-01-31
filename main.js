@@ -17,8 +17,34 @@ console.log(friendLen);
 $(document).ready(function () {
 	$("#textTab").on("click", function (e) {
 		e.preventDefault();
+		$(".tab").removeClass("tabSelected");
+		$(".popUp").removeClass("visible");
 		$("#textTab").addClass("tabSelected");
 		$("#textPop").addClass("visible")
+
+	});
+	$("#videoTab").on("click", function (e) {
+		e.preventDefault();
+		$(".tab").removeClass("tabSelected");
+		$(".popUp").removeClass("visible");
+		$("#videoTab").addClass("tabSelected");
+		$("#videoPop").addClass("visible")
+
+	});
+	$("#codeTab").on("click", function (e) {
+		e.preventDefault();
+		$(".tab").removeClass("tabSelected");
+		$(".popUp").removeClass("visible");
+		$("#codeTab").addClass("tabSelected");
+		$("#codePop").addClass("visible")
+
+	});
+	$("#aboutTab").on("click", function (e) {
+		e.preventDefault();
+		$(".tab").removeClass("tabSelected");
+		$(".popUp").removeClass("visible");
+		$("#aboutTab").addClass("tabSelected");
+		$("#aboutPop").addClass("visible")
 
 	});
 	$(".equis").on("click", function (e) {
