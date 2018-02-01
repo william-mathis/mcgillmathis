@@ -47,10 +47,26 @@ $(document).ready(function () {
 		$("#aboutPop").addClass("visible")
 
 	});
+	$(".image").on("click", function (e) {
+		e.preventDefault();
+		$(".tab").removeClass("tabSelected");
+		$(".popUp").removeClass("visible");
+	});
 	$(".equis").on("click", function (e) {
 		e.preventDefault();
 		console.log("click worked");
 		$(".tab").removeClass("tabSelected");
 		$(".popUp").removeClass("visible");
+	});
+	// $(".selItem").on('hover', function (e) {
+	//
+	// 	e.preventDefault();
+	// 	console.log("hover worked");
+	// 	$(".selItem").addClass('selectDis');
+	// });
+	$(".selItem").hover(function () {
+		$(this).addClass("selectDis");
+	}, function () {
+		$(this).removeClass("selectDis");
 	});
 });

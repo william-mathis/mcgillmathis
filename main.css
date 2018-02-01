@@ -115,7 +115,7 @@ table.banner {
   width: 90%;
   font-family: sans-serif;
   position: absolute;
-  background-color: #F0F1F4;
+  background-color: #FFFFFF;
   border-style: solid;
   border-width: 3px;
   border-color: #F0F1F4;
@@ -123,10 +123,25 @@ table.banner {
   left: 5%;
 }
 
+.video {
+  left: 10%;
+}
+
 .popText {
   font-size: 2em;
   text-align: center;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 1.4em;
+  text-decoration: underline;
+}
+
+.section {
+  font-size: 1.6em;
+  text-decoration: underline;
+  padding-top: 10px;
 }
 
 .mediaImage {
@@ -161,6 +176,17 @@ table.banner {
 .textFrame {
   height: 50vh;
   width: 100%;
+}
+
+.selectDis {
+  border-top: solid 3px #171E26;
+}
+
+hr {
+  width: 100%;
+  color: #171E26;
+  background-color: #171E26;
+  height: 5px;
 }
 
 
