@@ -10,9 +10,9 @@ var friends = ["http://clairemolloy.com/",
 console.log(friends)
 var friendLen = friends.length;
 console.log(friendLen);
-// var friendGenerate() {
-// 	Math.floor(Math.random() * friendLen)
-// };
+
+function numGen() { return Math.floor(Math.random() * friendLen) };
+
 
 $(document).ready(function () {
 	$("#textTab").on("click", function (e) {
@@ -68,5 +68,9 @@ $(document).ready(function () {
 		$(this).addClass("selectDis");
 	}, function () {
 		$(this).removeClass("selectDis");
+	});
+	$("#journoGen").on('click', function () {
+		// e.preventDefault();
+		window.open(friends[numGen()], '_blank');
 	});
 });
